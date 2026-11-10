@@ -202,6 +202,7 @@ body {
     display: grid;
     grid-template-columns: 32% 32% 32%;
     justify-content: space-between;
+    row-gap: 25px;
 }
 
 .tarjeta-nivel {
@@ -360,15 +361,98 @@ body {
     text-decoration: none;
 }
 
+.seccion-info {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.texto-apoyo {
+    max-width: 850px;
+    margin: -20px auto 40px auto;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.rejilla-info {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    row-gap: 20px;
+    text-align: left;
+}
+
+.rejilla-cuatro {
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    justify-content: space-between;
+    row-gap: 20px;
+    text-align: left;
+}
+
+.rejilla-doble {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.tarjeta-info {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 22px 20px;
+}
+
+.tarjeta-info h3 {
+    font-size: 16px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.tarjeta-info p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.bloque-texto h3 {
+    font-size: 20px;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.lista-texto {
+    list-style: none;
+}
+
+.lista-texto li {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
+    border-bottom: 1px solid #e2e8f0;
+}
+
 @media (max-width: 768px) {
     .rejilla-caracteristicas,
     .seccion-detalle,
     .rejilla-banner,
     .tarjetas-niveles,
-    .lista-logos,
-    .rejilla-contacto {
+    .rejilla-contacto,
+    .rejilla-info,
+    .rejilla-cuatro,
+    .rejilla-doble {
         grid-template-columns: 100%;
         gap: 30px;
+    }
+
+    .lista-logos {
+        grid-template-columns: 30% 30% 30%;
+        gap: 20px;
     }
 
     .contenido-principal {
@@ -384,5 +468,61 @@ body {
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .seccion-principal {
+        padding-bottom: 60px;
+    }
+
+    .contenido-principal {
+        max-width: 100%;
+        margin: 30px auto 0 auto;
+    }
+
+    .titulo-principal {
+        font-size: 26px;
+    }
+
+    .titulo-seccion {
+        font-size: 22px;
+    }
+
+    .subtitulo-principal {
+        font-size: 14px;
+    }
+
+    .texto-apoyo {
+        margin-top: -10px;
+        font-size: 14px;
+    }
+
+    .barra-navegacion {
+        padding: 15px 0;
+    }
+
+    .texto-logotipo {
+        font-size: 18px;
+    }
+
+    .precio-nivel {
+        font-size: 24px;
+    }
+
+    .lista-logos {
+        grid-template-columns: 45% 45%;
+    }
+
+    .seccion-caracteristicas,
+    .seccion-info,
+    .seccion-detalle,
+    .seccion-niveles,
+    .seccion-logos {
+        padding: 45px 0;
+    }
+
+    .banner-verde {
+        padding: 45px 0;
     }
 }
